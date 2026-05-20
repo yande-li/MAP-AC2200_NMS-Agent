@@ -3,7 +3,7 @@ These ucode and shell (ash) scripts enable LibreNMS monitoring for the Asus Lyra
 
 ### Requirements
 - **Hardware:** [Asus Lyra (MAP-AC2200)](https://openwrt.org/toh/asus/lyra_map-ac2200)
-- **OS:** OpenWrt version 23 or higher
+- **OS:** OpenWrt 23.05 or higher
 - **Software:** `snmpd` package must be installed
 
 
