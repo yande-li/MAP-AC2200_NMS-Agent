@@ -1,7 +1,6 @@
 #!/bin/sh
 
 mkdir -p /etc/nms_agent
-
 cat << 'EOF' > /etc/nms_agent/temperature.uc
 #!/usr/bin/ucode
 const fs = require("fs");
@@ -26,7 +25,6 @@ if (max_temp > 0) {
     printf("%.1f", max_temp / 1000);
 }
 EOF
-
 cat << 'EOF' > /etc/nms_agent/distro.uc
 #!/usr/bin/ucode
 const fs = require("fs");
@@ -46,8 +44,5 @@ if (fp) {
 }
 print(id + " " + release + "\n");
 EOF
-
-chmod +x /etc/nms_agent/temperature.uc
-chmod +x /etc/nms_agent/distro.uc
-
+chmod +x /etc/nms_agent/temperature.uc /etc/nms_agent/distro.uc
 exit 0
