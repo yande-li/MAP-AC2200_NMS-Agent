@@ -1,4 +1,11 @@
 #!/usr/bin/ucode
+
+// This script reads the temperature values from the following files:
+//   /sys/class/hwmon/hwmon0/temp1_input
+//   /sys/class/hwmon/hwmon1/temp1_input
+//   /sys/class/hwmon/hwmon2/temp1_input
+//  and outputs the highest temperature value among them.
+
 const fs = require("fs");
 let max_temp = 0;
 
